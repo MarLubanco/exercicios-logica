@@ -1,0 +1,11 @@
+3. Dado um arquivo texto muito grande, que não caiba na
+memória – exemplo: 10Gb, encontre as 50 mil frases mais
+frequentes. O formato do arquivo são linhas com até 50
+frases divididas por pipe ( “|” ).
+
+Iria criar um banco de dados para poder armazenar as frases,
+porque não cabe em memória, armezando no banco de dados, iria excluindo
+do arquivo essas frases, até o arquivo estar vazio, após isso
+faria a analise das frases mais frequentes criando um group by e ordenando
+pela quantidade de vezes que mais aparecem, assim teria as 50 mil
+frases mais recorrentes.
