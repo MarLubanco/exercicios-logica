@@ -1,7 +1,6 @@
-package service;
+package palindromo;
 
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class Service {
 
@@ -53,12 +52,12 @@ public class Service {
      */
     public String inverterPalavra(String palavra) {
         String palavraInvertida = "";
-        char[] ch = new char[palavra.length()];
+        char[] letras = new char[palavra.length()];
         for (int i = 0; i < palavra.length(); i++) {
-            ch[i] = palavra.charAt(i);
+            letras[i] = palavra.charAt(i);
         }
-        for (int i = ch.length-1; i >= 0; i--) {
-            palavraInvertida += ch[i];
+        for (int i = letras.length-1; i >= 0; i--) {
+            palavraInvertida += letras[i];
         }
         return palavraInvertida;
     }
